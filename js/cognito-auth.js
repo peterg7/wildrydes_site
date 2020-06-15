@@ -26,8 +26,6 @@ var WildRydes = window.WildRydes || {};
     }
 
     WildRydes.signOut = function signOut() {
-        console.log('inside signout');
-        console.log(userPool.getCurrentUser())
         userPool.getCurrentUser().signOut();
     };
 
